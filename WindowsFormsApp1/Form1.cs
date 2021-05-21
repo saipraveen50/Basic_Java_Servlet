@@ -28,7 +28,6 @@ namespace WindowsFormsApp1
         private void btnStart_Click(object sender, EventArgs e)
         {
             grbVideoInfo.Visible = true;
-            //GetVideoData(txtUrl.Text);
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
@@ -66,14 +65,20 @@ namespace WindowsFormsApp1
             var bitRate = videoData.Where(r => r.AdaptiveKind == AdaptiveKind.Audio ).Select(r => r.AudioBitrate);
             foreach (var item in resolution)
             {
-                cmbQuality.Invoke((MethodInvoker)(() => cmbQuality.Items.Add(item.ToString() + "p")));
+                cmbQuality.Invoke((MethodInvoker)(() => cmbQuality.Items.Add(item)));
             }
 
             foreach (var item in bitRate)
             {
-                cmbQuality.Invoke((MethodInvoker)(() => cmbQuality.Items.Add(item.ToString() + "Kbps")));
+                cmbQuality.Invoke((MethodInvoker)(() => cmbQuality.Items.Add(item)));
             }
 
+            if (cmbQuality.Items.Count > 0)
+            {
+                cmbQuality.Invoke((MethodInvoker)(() => cmbQuality.Sorted = true));
+                cmbQuality.Invoke((MethodInvoker)(() => cmbQuality.SelectedIndex = 0));
+                txtTitle.Invoke((MethodInvoker)(() => txtTitle.Text = videoData.ToList()[0].Title));
+            }
         }
 
         private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)
