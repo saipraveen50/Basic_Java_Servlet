@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{230B5BDD-A55D-4CBB-B215-A5F7930968D4}"
+	ProjectSection(SolutionItems) = preProject
+		YoutubeDownloader\YoutubeDownloader.csproj = YoutubeDownloader\YoutubeDownloader.csproj
+		YoutubeDownloader\YoutubeDownloader.csproj.user = YoutubeDownloader\YoutubeDownloader.csproj.user
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{FD45028A-5CB3-4A92-AE32-AF515DD208CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD45028A-5CB3-4A92-AE32-AF515DD208CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD45028A-5CB3-4A92-AE32-AF515DD208CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD45028A-5CB3-4A92-AE32-AF515DD208CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD45028A-5CB3-4A92-AE32-AF515DD208CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FD45028A-5CB3-4A92-AE32-AF515DD208CF} = {230B5BDD-A55D-4CBB-B215-A5F7930968D4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3A3A29C-66A3-4AF6-8715-7EE2CD8E4A0C}
+	EndGlobalSection
+EndGlobal
